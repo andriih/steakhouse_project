@@ -61,7 +61,7 @@ gulp.task("css:vendor", function() {
         "node_modules/bootstrap/dist/css/bootstrap.css",
         "node_modules/toastr/build/toastr.min.css",
         "node_modules/datatables.net-bs/css/dataTables.bootstrap.css",
-        "src/css/animate.min.css"
+        "src/css/font-awesome/css/font-awesome.min.css",        
 
     ])
         .pipe(gulpif(!isDevelopment,nano()))
@@ -85,10 +85,6 @@ gulp.task("html", function() {
         .pipe(gulp.dest("dist"));
 });
 
-gulp.task("demo", function(cb) {
-    console.log("This is our task");
-    cb();
-});
 
 gulp.task("css", ["css:own", "css:vendor"]);
 gulp.task("js", ["js:own", "js:vendor"]);
