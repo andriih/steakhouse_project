@@ -8,27 +8,41 @@
 .container{
   width: 1170px;
 }
-
-
+ .p0{
+  padding: 0;
+  margin: 0;
+ }
+.info-string-top{
+  display: flex;
+  height: 29px;
+  background-color: yellow;
+  &-descr{
+    margin: auto;
+  }
+}
 .header{
+  position: relative;
   margin: 0;
   padding: 0;
   height: 969px;
   background-image: url("../img/steak-1.jpg");
   background-size:cover;
-
-  & .info-string-top{
-    height: 29px;
+  //background-color:black;
+  
+  & .header-wrapper{
+    position: absolute;
     margin: 0;
     padding: 0;
-    vertical-align: middle;
-    background-color: #e4bb7a;
-  }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-  & .top-menu{
-    height: 80px;
-    background-color: black;
-    opacity: 0.8;
+    background-color:rgba(0,0,0,.5);
+    
+    & .menu-top{
+      height: 100px;
+      background-color:rgba(0,0,0,.7);
+    }
   }
-  
 }
