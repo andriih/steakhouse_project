@@ -18,11 +18,21 @@
   background-image: url(../img/steak-2.jpg);
   background-size: 100% 100%;
   height: 800px;
+  position: relative;
+
 
   & .header-content{
-   display: flex;
+     display: flex;
+     width: 100%;
+     height: 100%;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+
+
     & .header-content-wrapper{
-      margin: auto;
+     margin: auto;
       color: #fff;
       height: 200px;
       width: 300px;
@@ -30,7 +40,8 @@
   }
 
    & .menu-top{
-   
+   position: relative;
+   z-index: 1;
     width: 100%;
        
 
@@ -48,9 +59,15 @@
       }
     }
 
+    & .collapse{
+      position: relative;
+      z-index: 1;
+
+    }
+
     & .menu-list{
       list-style-type: none;
-
+      float: right;
       & .menu-item{
         display: inline-block;
         //height: 100%;
@@ -67,5 +84,32 @@
     }
   }
  }
+
+
+ /*SLIDER NAVBAR*/
+.main-slider{
+  & .slider-nav{
+    border-radius: 0px;
+    
+    & .menu-list{
+
+      list-style-type: none;
+     & .menu-item{
+          display: inline-block;
+          //height: 100%;
+
+          & .menu-link{
+            text-decoration: none;
+            line-height: 90px;
+            height: 100%;
+            color: #333333;
+            display: block;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
 
 
