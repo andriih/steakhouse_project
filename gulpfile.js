@@ -47,6 +47,7 @@ gulp.task("js:vendor", function() {
         "node_modules/jquery-validation/dist/additional-methods.js",
         "node_modules/datatables.net/js/jquery.dataTables.js",
         "node_modules/datatables.net-bs/js/dataTables.bootstrap.js",
+        "node_modules/flickity/dist/flickity.pkgd.min.js",
         "src/js/animatedModal.min.js"
 
     ])
@@ -61,7 +62,8 @@ gulp.task("css:vendor", function() {
         "node_modules/bootstrap/dist/css/bootstrap.css",
         "node_modules/toastr/build/toastr.min.css",
         "node_modules/datatables.net-bs/css/dataTables.bootstrap.css",
-        "src/css/font-awesome/css/font-awesome.min.css",        
+        "node_modules/flickity/dist/flickity.min.css",
+        "src/css/font-awesome/css/font-awesome.min.css"        
 
     ])
         .pipe(gulpif(!isDevelopment,nano()))
