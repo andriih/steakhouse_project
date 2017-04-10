@@ -132,7 +132,7 @@
         height: 100%;
 
         & img{
-           width: 100%;
+        width: 100%;
         height: 100%;
         }
       }
@@ -159,28 +159,24 @@
   height: 800px;
   margin: 0;
   padding: 0;
+  
   & .organic-area-nav{
+    position: relative;
+    z-index: 1;
     height: 100px;
     text-align: center;
     display: flex;
     
-    & .navbar-header{
-      margin: auto;
-      display: inline-block;
         & .organic-logo{
-          margin: auto;
           display: inline-block;
        }
-    }
-
-    
 
     & .menu-list{
       display: inline-block;
       margin: auto;
-      //float: right;
+     
       list-style: none;
-      width: 150px;
+      //width: 150px;
       & .menu-item{
         display: inline-block;
         & .menu-link {
@@ -191,5 +187,22 @@
         }
       }
     }
+  }
+
+  & .organic-area-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+   & .area-content{
+    margin: auto;
+     border: 1px solid black;
+     width: 400px;
+     height: 400px;
+   }
+  
+
   }
 }
